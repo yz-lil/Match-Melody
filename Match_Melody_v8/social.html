@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Melody</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <script src="accDropdown.js"></script>
+</head>
+<body class="social_bg" style="overscroll-behavior: none;">
+    <nav class="navbar" style="position:fixed;width:100%;">
+        <div class="navbarContainer">
+            <a href="index.html" class="navbarLogo">MATCH MELODY</a>
+            <ul class="navbarMenu">
+                <li class="navbarItem">
+                    <a href="player.html" class="navbarLinks" style="width: 80px;">Player</a>
+                </li>
+                <li class="navbarItem" style="margin-right: 65px;">
+                    <a href="social.html" class="navbarLinks">Social</a>
+                </li>
+                <li class="navbarItem">
+                    <div class ="dropdown">
+                        <button class="link" id="button" onclick="showDropdown()">
+                            <img src="profile.png" class="profileImg">
+                        </button>
+                        <div class="accountMenu" id="accMenu">
+                            <ul class="menuLinks">
+                                <li style = "padding-bottom: 15px;">
+                                    <a href="#settings" class="a">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="index.html" class="a">Log out</a>
+                                </li>
+                            </ul>                            
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="leftPanel">
+        <span class="profileEmpty"></span>
+        <p class="userHeader">Jane Smith</p>
+        <p class="userHeader" style="font-size:1.1vw; color:#a7a7a7">@jsmith_2</p>
+    </div>
+    <div class="socialMenu">
+        <ul style="list-style: none;">
+            <li style="display:flex;">
+                <img src="home.png" class="icon">
+                <div class="padd2">
+                    <p class="menuTitle">Home</p>
+                </div>  
+            </li>
+            <li style="display:flex;">
+                <img src="explore.png" class="icon">
+                <div class = "padd2">
+                    <p class="menuTitle">Explore</p>
+                </div>
+            </li>
+            <li style="display:flex;">
+                <img src="search.png" class="icon">
+                <div class="padd2">
+                    <p class="menuTitle">Search</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul class="centerPanel">
+            <li class="contentPanel"></li>
+            <li class="contentPanel"></li>
+            <li class="contentPanel"></li>
+            <li class="contentPanel"></li>
+            <li class="contentPanel"></li>
+            <li class="contentPanel"></li>
+            <div style="height:10px; width:100%;"></div>
+        </ul>
+    </div>
+    <div class="rightPanel">
+        <h3 class="panelHeader">Activity</h3>
+        <ul style="list-style: none;"">
+            <li>
+                <div class="profileEmpty" style="position: relative;width: 50px;height: 50px; margin-bottom: 10px;"></div>
+                <p class="textSmall" style="padding: 14px 0 0 35px; top:-8vh;">Simon Jacobs</p>
+                <p class="textSmall" style="padding: 0 0 0 35px; font-size: 0.9vw; color:rgb(198, 198, 198); top: -8vh;">Take me to church - Hozier</p>
+            </li>
+            <li>
+                <div class="profileEmpty" style="position: relative;width: 50px;height: 50px; top:-5vh;"></div>
+                <p class="textSmall" style="padding: 14px 0 0 35px;">Sarah Davis</p>
+                <p class="textSmall" style="padding: 0 0 0 35px; font-size: 0.9vw; color:rgb(198, 198, 198);">Yellow - Coldplay</p>
+            </li>
+        </ul>
+        <h3 class="panelHeader" style="padding-left:5px;position:absolute;top:29.2vh;color:rgb(198, 198, 198);">Requests</h3>
+        <ul style="list-style: none;position: absolute; top: 36.6vh;">
+            <li>
+                <div class="friendReq">
+                    <div class="profileEmpty" ></div>
+                    <p class="userHeader" style="font-size: 1.1vw; padding-top: 5px; left: 90px;">Joe Ross</p>
+                    <p class="userHeader" style="font-size:1vw; color:#a7a7a7;left:90px">@jross</p>
+                    <img src="cross.png" class="cross">
+                    <img src="tick.png" class="tick">
+                </div>
+            </li>
+            <li>
+                <div class="friendReq">
+                    <div class="profileEmpty" style="position:relative"></div>
+                    <p class="userHeader" style="font-size: 1.1vw; top: -36px; left: 90px;">Lisa Green</p>
+                    <p class="userHeader" style="font-size:1vw; top: -36px; color:#a7a7a7;left:90px">@lisa_g</p>
+                    <img src="cross.png" class="cross" style="top: -9.6vh;">
+                    <img src="tick.png" class="tick" style="top: -9.6vh;">
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

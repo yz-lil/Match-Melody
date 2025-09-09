@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Melody</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="overflow: hidden;">
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <a href="index.html" class="navbarLogo">MATCH MELODY</a>
+            <ul class="navbarMenu">
+                <li class="navbarItem">
+                    <a href="index.html" class="navbarLinks">Home</a>
+                </li>
+                <li class="navbarItem">
+                    <a href="discover.html" class="navbarLinks">Discover</a>
+                </li>
+                <li class="navbarItem">
+                    <a href="contact_us.html" class="navbarLinkLarge">Contact Us</a>
+                </li>
+                <li class="navbarBtn">
+                    <a href="player.html" class="button">Sign In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        <div class="main_bg"></div>
+        <div class="contact_us"><h1 class="heading">Get in touch</h1></div>
+        <p class="details" style="margin-top: 140px;">Phone: 0123 456 789</p>
+        <p class="details">Email: example@example.com</p>
+        <p class="details">Address: University of Liverpool, Liverpool, L69 3BX</p>
+    </div>
+    <div>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" class="form_regular" placeholder="Name"">
+            <textarea class="form_msg" id="msg" placeholder="Your message"></textarea><br>
+            <input type="text" id="phone" name="phone" class="form_regular" placeholder="Phone number" style="margin-top: 55px;"><br>
+            <input type="text" id="email" name="email" class="form_regular" placeholder="Email" style="margin-top: 110px;"><br>
+            <div class="submit_btn">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+        
+    
+</body>
+</html>

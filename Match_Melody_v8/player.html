@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Melody</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <script src="accDropdown.js"></script>
+    <!-- <script src="musicHandler.js"></script> -->
+    
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    
+</head>
+<body style="overflow: hidden;">
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <a href="index.html" class="navbarLogo">MATCH MELODY</a>
+            <ul class="navbarMenu">
+                <li class="navbarItem">
+                    <a href="player.html" class="navbarLinks" style="width: 80px;">Player</a>
+                </li>
+                <li class="navbarItem" style="margin-right: 65px;">
+                    <a href="social.html" class="navbarLinks">Social</a>
+                </li>
+                <li class="navbarItem" style="background-color: white;">
+                    <div class ="dropdown">
+                        <button class="link" id="button" onclick="showDropdown()">
+                            <img src="profile.png" class="profileImg">
+                        </button>
+                        <div class="accountMenu" id="accMenu">
+                            <ul class="menuLinks">
+                                <li style = "padding-bottom: 15px;">
+                                    <a href="#settings" class="a">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="index.html" class="a">Log out</a>
+                                </li>
+                            </ul>                            
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <img src="" class="albumArt" id="thumbnail">
+    
+    <button>
+        <img class ="arrow" onclick="requestSetAlbumArt()" src="arrow.png">
+        <a href="#" onclick="saveTrack('current-track-name-save')">
+          <img class="heart" style="display:none;" id="current-track-name-save" src="//:0" />
+        </a>
+    </button>
+    <div class="background">
+        <img src="playerBg.jpg" class="albumArtBg" id="bg">
+    </div>
+    <h1 class="playerTitle" id="titleInit" style="opacity: 0.75">Discovery starts here</h1>
+    <div>
+    <iframe
+          style="opacity:0"
+          class="spotifyPlayer"
+          id="embed-uri"
+          src="about:blank"
+          width="40%"
+          height="80"
+          frameborder="0"
+          allowtransparency="true"
+          allowfullscreen="" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+          loading="lazy"
+        ></iframe>
+    </div>
+</body>
+</html>
